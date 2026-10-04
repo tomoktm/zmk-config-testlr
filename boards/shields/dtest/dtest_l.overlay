@@ -1,0 +1,12 @@
+#include "dtest.dsti"
+
+&kscan0 {
+    row-gpios
+        = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>     //Row0
+        , <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>     //Row1
+        ;
+    col-gpios
+        = <&gpio1 11 GPIO_ACTIVE_HIGH>	//Col0
+        , <&gpio1 13 GPIO_ACTIVE_HIGH>  //Col1
+        ;
+};

@@ -18,3 +18,9 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+  include:
+      - board: nice_nano
+        shield: dtest_d
+      - board: nice_nano
+        shield: dtest_l
+        cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
