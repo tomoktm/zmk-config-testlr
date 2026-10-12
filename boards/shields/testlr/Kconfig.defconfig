@@ -1,7 +1,7 @@
-if SHIELD_DTEST_D
+if SHIELD_TEST_L
 
 config ZMK_KEYBOARD_NAME
-    default "dtest_d"
+    default "testlr"
 
 config ZMK_USB
     default y
@@ -23,7 +23,7 @@ config BT_MAX_PAIRED
 
 endif
 
-if SHIELD_DTEST_L
+if SHIELD_TEST_R
 
 config ZMK_SPLIT
     default y
