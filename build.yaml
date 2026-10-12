@@ -23,4 +23,3 @@
         shield: test_l
       - board: nice_nano
         shield: test_r
-        cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
