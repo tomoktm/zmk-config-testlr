@@ -1,8 +1,17 @@
 #include "testlr.dsti"
 
+&default_transform {
+    // Set this to the number of columns on the left side.
+    col-offset = <2>;
+};
+
 &kscan0 {
+    row-gpios
+        = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>     //Row0
+        , <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>     //Row1
+        ;
     col-gpios
-        = <&gpio1 11 GPIO_ACTIVE_HIGH>	//Col0
-        , <&gpio1 13 GPIO_ACTIVE_HIGH>  //Col1
+        = <&gpio1 11 GPIO_ACTIVE_HIGH>	//Col2
+        , <&gpio1 13 GPIO_ACTIVE_HIGH>  //Col3
         ;
 };
