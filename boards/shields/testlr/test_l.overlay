@@ -1,1 +1,7 @@
 #include "testlr.dsti"
+
+&kscan0 {
+    col-gpios
+        = <&gpio1 11 GPIO_ACTIVE_HIGH>	//Col0
+        , <&gpio1 13 GPIO_ACTIVE_HIGH>  //Col1
+        ;
