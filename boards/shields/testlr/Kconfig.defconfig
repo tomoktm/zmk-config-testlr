@@ -3,8 +3,8 @@ if SHIELD_TEST_L
 config ZMK_KEYBOARD_NAME
     default "test_l"
 
-config ZMK_USB
-    default y
+# config ZMK_USB
+#     default y
 
 config ZMK_SPLIT
     default y
